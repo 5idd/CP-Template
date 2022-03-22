@@ -29,7 +29,7 @@ using namespace std;
 #define find(v, x) (find(all(v), (x)) - v.begin())
 #define read(vect) for(auto &x : vect) cin >> x
 #define print(vect) for(auto &x : vect) cout << x << " "
-#define google(ans) cout << "Case #" << case_num << ": " << ans << endl;
+#define google(ans) cout << "Case #" << case_num << ": " << ans << endl
 #define deb(x) cout << "deb " << #x << " : "; _print(x); cout << nl
 #define fastio() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
