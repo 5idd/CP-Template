@@ -29,6 +29,7 @@ using namespace std;
 #define find(v, x) (find(all(v), (x)) - v.begin())
 #define read(vect) for(auto &x : vect) cin >> x
 #define print(vect) for(auto &x : vect) cout << x << " "
+#define google(ans) cout << "Case #" << case_num << ": " << ans << endl;
 #define deb(x) cout << "deb " << #x << " : "; _print(x); cout << nl
 #define fastio() ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
@@ -44,9 +45,10 @@ template <class T, class V> void _print(map <T, V> container) {cout << "[ "; for
 vi sieve(int n) {int*arr = new int[n + 1](); vi vect; for (int i = 2; i <= n; i++)if (arr[i] == 0) {vect.push_back(i); for (int j = 2 * i; j <= n; j += i)arr[j] = 1;} return vect;}
 int gcd(int a, int b) {if (b > a) {return gcd(b, a);} if (b == 0) {return a;} return gcd(b, a % b);}
 
+// 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
 
-void solve(){
+void solve(int case_num){
     
 }
 
@@ -54,7 +56,6 @@ int32_t main(){
     fastio();
     int t = 1;
     //cin >> t;
-    while(t--){
-        solve();
-    }
+    rep(i, 1, t+1)
+    solve(i);
 }    
